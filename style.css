@@ -1,0 +1,196 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-family: 'Lora';
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box-swiper-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.box-swiper-container.box-left {
+  -webkit-clip-path: polygon(0 0, 51% 0, 51% 100%, 0% 100%);
+  clip-path: polygon(0 0, 51% 0, 51% 100%, 0% 100%);
+}
+/* .box-swiper-container.box-left .swiper-container .swiper-slide {
+  background-color: red;
+} */
+.box-swiper-container.box-right {
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+
+}
+.box-swiper-container.box-right .swiper-wrapper {
+  transition-delay: .1s;
+}
+.box-swiper-container.box-right .swiper-container .swiper-slide {
+  background-color: yellow;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.box-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-title h1{
+  font-size: 4vw;
+  margin: 0;
+  /* transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.1s;
+  transform: translate3d(-20%, 0, 0);
+  opacity: 0; */
+  color: #fff;
+}
+
+.box-title p {
+  width: 60%;
+  line-height: 1.5;
+  /* opacity: 0;
+  transition: all .6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;
+  transform: translate3d(65%, 0, 0); */
+}
+
+.box-even p{
+  transform: translateX(65%);
+}
+.box-odd{
+  text-align: left;
+  transform: translateX(-30%);
+}
+
+.box-even{
+  text-align: right;
+  transform: translateX(-65%);
+}
+
+/* 
+.swiper-slide.swiper-slide-active .box-title h1,
+.swiper-slide.swiper-slide-active .box-title p
+.swiper-slide.swiper-slide-active h1 span.emphasis,
+.swiper-slide.swiper-slide-active h1 + p {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+} */
+
+
+.custom-flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-pagination-bullet {
+  width: 4px!important;
+  height: 50px!important;
+  background: #fff!important;
+  /* opacity: 1; */
+  border-radius: 0!important;
+  margin-top: 10px!important;
+  
+}
+
+.swiper-pagination {
+  top: 50%;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  left: 45%!important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: red!important;
+}
+
+/* h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  color: #fff;
+  align-self: flex-start;
+  margin: 0 0 auto 0;
+  font-size: 4.5rem;
+  line-height: 1;
+  transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.1s;
+  transform: translate3d(-20%, 0, 0);
+  opacity: 0;
+}
+
+h1 span.emphasis {
+  font-weight: 700;
+  font-style: italic;
+  opacity: 0;
+  transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s;
+  transform: translate3d(-20%, 0, 0);
+  display: inline-block;
+}
+
+
+h1 + p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1;
+  margin-bottom: auto;
+  align-self: flex-end;
+  text-transform: uppercase;
+  transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.3s;
+  transform: translate3d(-20%, 0, 0);
+  opacity: 0;
+  font-weight: 500;
+  color: #fff;
+  padding-right: 8rem;
+}
+p.paragraph {
+  margin: 0;
+  color: #fff;
+  width: 100%;
+  max-width: 350px;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: all .6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;
+  transform: translate3d(-20%, 0, 0);
+} */
